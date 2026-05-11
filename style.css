@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap');
+
+* { 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+}
+
+body {
+  background: #0f0f0f;
+  font-family: 'Tajawal', sans-serif;
+  color: #e8e0d5;
+  direction: rtl;
+  margin: 0;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #1a1a1a; }
+::-webkit-scrollbar-thumb { background: #3a3a3a; border-radius: 3px; }
+
+.tab-btn { transition: all 0.2s; cursor: pointer; border: none; }
+.tab-btn:hover { opacity: 0.85; }
+
+.option-card { transition: border-color 0.2s; animation: slideIn 0.3s ease; }
+@keyframes slideIn { 
+  from { opacity:0; transform:translateY(8px); } 
+  to { opacity:1; transform:translateY(0); } 
+}
+
+.status-btn { transition: all 0.15s; cursor: pointer; border: none; }
+.status-btn:hover { transform: scale(1.08); }
+
+input { outline: none; }
+input::placeholder { color: #555; }
+
+.del-opt { opacity: 0; transition: opacity 0.2s; }
+.option-card:hover .del-opt { opacity: 1; }
+
+.img-toggle:hover { 
+  background: #242424 !important; 
+  border-color: #3a3a3a !important; 
+  color: #aaa !important; 
+}
